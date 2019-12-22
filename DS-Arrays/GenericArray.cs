@@ -12,7 +12,7 @@ namespace DS_Arrays
 
         public GenericArray(int length)
         {
-            array = new T[length];
+            array = new T[length]; 
         }
 
         public void Print()
