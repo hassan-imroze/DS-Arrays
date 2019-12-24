@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace DS_Arrays
             Console.WriteLine();
 
             ArrayClassExcercise();
-
+            
             Console.ReadKey();
         }
 
@@ -33,6 +34,15 @@ namespace DS_Arrays
         static void ArrayClassExcercise()
         {
             GenericArray<int> numbers = new GenericArray<int>(length: 3);
+            numbers.Print();
+            numbers.Insert(4);
+            numbers.Insert(2);
+            numbers.Insert(12);
+            numbers.Insert(10);
+            numbers.Print();
+            Console.WriteLine(numbers.IndexOf(12));
+            Console.WriteLine(numbers.IndexOf(100));
+            numbers.RemoveAt(2);
             numbers.Print();
         }
     }
